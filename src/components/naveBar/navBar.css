@@ -1,0 +1,30 @@
+.nav_div{
+    background-color: #f9d342;
+    display: flex;
+    align-items:center;
+    width: 100%;
+}
+
+.nav_ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content:space-between;
+}
+
+.links{
+      text-decoration: none;
+      color:  #292826 
+}
+
+.logo_div{
+    width: 50%;
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 1.7rem;
+    padding:.9rem
+}
+
+Link{
+    font-style: none
+}
+
