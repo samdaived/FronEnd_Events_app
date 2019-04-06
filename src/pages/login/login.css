@@ -29,10 +29,12 @@ label{
     padding: .5rem
 }
 .btn_div{
+    cursor: pointer;
     display: flex;
     justify-content: flex-end
 }
 .btn{
+    cursor: pointer;
     border-radius: 3px;
     color:  #292826;
     background-color:  #f9d342;

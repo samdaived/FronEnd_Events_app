@@ -1,0 +1,44 @@
+.div_event{
+    padding: 2%;
+    margin: 2%;
+    border: bisque solid 1px;
+    width: 25%;
+    border-radius: 5px;
+}
+
+.title{
+    margin:5% 
+}
+
+
+.btn-event{
+    cursor: pointer;
+    border-radius: 3px;
+    color:  #292826;
+    background-color:  #f9d342;
+    height: 2rem;
+    margin: .4rem;
+    font-size: .9rem
+}
+
+.event_base{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.date{
+    font-size: 1.2rem
+}
+
+@media only screen and (max-width: 900px) and ( min-width: 600px){
+    .div_event{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .div_event{
+        margin: 2% auto;
+        width: 80%;
+    }
+}

@@ -14,17 +14,31 @@
 
 .links{
       text-decoration: none;
-      color:  #292826 
+      color:  #292826
 }
 
 .logo_div{
     width: 50%;
     font-family: 'Baloo Chettan', cursive;
-    font-size: 1.7rem;
+    font-size: 1.75rem;
     padding:.9rem
 }
 
-Link{
-    font-style: none
-}
+.links_active{
+    color: #f9d342;
+    border-radius:10px 10px 0 0 ;
 
+    padding: 1.7rem;
+    background-color:  #292826;
+}
+@media only screen and (max-width: 700px){
+
+.nav_div{
+    display: block
+}
+.nav_ul{
+    width: 80%;
+    display: flex;
+    cursor: pointer;
+}
+}
