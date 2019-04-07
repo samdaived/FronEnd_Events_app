@@ -15,6 +15,15 @@ https://frontend-event.herokuapp.com/
   -Deleting event will delete the event from all the users that have supscribe in
   -in my event Page you will see all the subscriped and created events
   
+## What you can do more?
+  - You can add pagination and let the client control how many event can see in each page
+  - add Editing
+  - Add email conformation https://sendgrid.com/ is rocommanded (100 FREE emails a day) but you need the server project for this 
+  -Add email reminder for perople who participated
+  - Create list to show the partcipants and contact them (Already the app is storing that in each event)
+  - Adding limits for the participant number
+  - more and more
+  
 
 
 ### `npm install`
