@@ -55,7 +55,7 @@ const Event=(props)=>{
                 {data.description}
                 </p>
             </div>
-                <small ><strong>Date: </strong>{data.date?new Date(parseInt(data.date)).toUTCString():null}<br/><strong> price: </strong> {data.price} €</small>
+                <small ><strong>Date: </strong>{data.date?new Date(parseInt(data.date)).toUTCString():null}<br/><strong> price: </strong> {data.price==0?"FREE":data.price+" €"}</small>
             <div className="event_base">
                 <button className="btn-event" disabled={auth?false:true} onClick={Followed?cancelbook:book}>{Followed?"Cancel Attending":"Attend"}</button>
                 <a href={`mailto:${data.creator[0].email}?Subject=Event:%20${data.title}`} target="_top" ><button className="btn-event">contact</button></a>
