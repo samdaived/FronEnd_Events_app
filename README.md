@@ -1,7 +1,18 @@
 
-# Full Stack Event App, HERE YOU WILL SEE JUST THE FRONEND 
+# Full Stack Event App, HERE YOU WILL SEE JUST THE FRONTEND 
 
-This app is useing React in the FrontEnd and Node for the BackEnd
+This app is useing React in the FrontEnd
+Node, MongoDB, GrapgQl in the BackEnd
+
+## You can visit the App here 
+https://frontend-event.herokuapp.com/
+
+## What Does this App do?
+  # To use the App you shpuld be authenticated.
+  # You can sign up and login 
+  # the app is storing the Auth data in your local storage for one hour so event if you refresh the page you will be authenticated, if you sesion expired the App will remove your auth data 
+  # After being authenticated the You can add and Attend event
+  
 
 
 ### `npm install`
