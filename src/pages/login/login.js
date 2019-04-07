@@ -4,6 +4,7 @@ import * as queries from '../../queries/queries';
 import {storeAuth} from '../../helpers/stroeAuth';
 import {withRouter} from 'react-router-dom';
 import {notEmpty} from '../../helpers/validator';
+import {AlertHandler} from '../../helpers/alert';
 
 
 const Login=(props)=>{
@@ -20,11 +21,12 @@ const Login=(props)=>{
         if(notEmpty(email)&& notEmpty(password)){
             return queries.apolloFetch({query:queries.signup(email,password,["userId,token,expiredIn"])})
             .then(res=>{
+                AlertHandler(res);
                 storeAuth(res,"createUser");
                 props.authHandler(localStorage.getItem('expiredIn'));
                 return props.history.push("/")
             })
-            .catch(er=>console.log(er))
+            .catch(er=>alert(er))
          }
     };
     
@@ -32,11 +34,12 @@ const Login=(props)=>{
         if(notEmpty(email)&& notEmpty(password)){
             return queries.apolloFetch({query:queries.login(email,password,["userId,token,expiredIn"])})
             .then(res=>{
+                AlertHandler(res);
                 storeAuth(res,"login");
                 props.authHandler(localStorage.getItem('expiredIn'));
                 return props.history.push("/")
             })
-            .catch(er=>console.log(er))
+            .catch(er=>alert(er))
         }
     };
 

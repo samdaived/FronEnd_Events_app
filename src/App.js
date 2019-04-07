@@ -24,6 +24,7 @@ const App=()=>{
             <Switch>
               {token?null:<Route path={"/login"} render={()=><Login authHandler={expiredInEditor} />} exact />}
               <Route path={"/"} exact render={()=><AllEvent auth={token}/>} />
+              <Route path={"/myevents"} exact render={()=><AllEvent JustMine={true} auth={token}/>} />
             </Switch> 
           </React.Fragment>
           );

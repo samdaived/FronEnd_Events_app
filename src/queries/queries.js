@@ -1,7 +1,7 @@
 import {createApolloFetch} from 'apollo-fetch';
 
 
-const uri="https://server-event-79524.herokuapp.com/graphql";
+const uri="https://event-app-server-1.herokuapp.com/graphql";
 export const apolloFetch=createApolloFetch({uri});
 
 export const createEvent=(title,description,date,price,arr)=>{
@@ -21,10 +21,8 @@ apolloFetch.use(({ request , options }, next) => {
       options.headers = {};  // Create the headers object if needed.
     }
     if(request.auth){
-        console.dir(request);
         options.headers['auth'] = request.auth;
         delete request.auth;
-        console.log(request);
     }
     next();
   })

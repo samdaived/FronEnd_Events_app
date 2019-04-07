@@ -1,5 +1,7 @@
 .div_event{
+    position: relative;
     padding: 2%;
+    height: 20rem;
     margin: 2%;
     border: bisque solid 1px;
     width: 25%;
@@ -9,7 +11,19 @@
 .title{
     margin:5% 
 }
-
+.btn-event_close{
+    position:absolute;
+    top: 5px;
+    left: 5px;
+    background-color: inherit;
+    border: none;
+    font-size: .9rem;
+    color: red;
+    cursor: pointer;
+}
+.btn-event_close:hover{
+    color: #a52f1a;
+}
 
 .btn-event{
     cursor: pointer;
@@ -22,9 +36,8 @@
 }
 
 .event_base{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+
+    position: absolute;
 }
 .date{
     font-size: 1.2rem
@@ -41,4 +54,9 @@
         margin: 2% auto;
         width: 80%;
     }
+}
+
+.description{
+    height: 60%;
+    overflow: auto;
 }

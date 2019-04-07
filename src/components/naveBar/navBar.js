@@ -13,7 +13,8 @@ const NavBar=(props)=>{
     <div className="nav_div">
         <div className="logo_div">
             <NavLink className="links"to={'/'} exact>EVENTS
-            </NavLink></div>
+            </NavLink>
+        </div>
         
         <div className="list_div">
             <ul className="nav_ul">
